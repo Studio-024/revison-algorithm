@@ -8,11 +8,9 @@ const acceptableUserGrade = {
 
 const test1: informations = {
      userGrade: acceptableUserGrade.win,
-    streak: 0, // days
-    intervalDay: 0, //days
-    easinessFactor: 0
+    streak: 6, // days
+    intervalDay: 6, //days
+    easinessFactor: 1.3
 }
 
-
 sm2(test1)
-

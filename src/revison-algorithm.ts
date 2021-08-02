@@ -17,22 +17,21 @@ export const sm2 = (inf: informations) => {
         }
 
         inf.easinessFactor += (0.1 - (5 - inf.userGrade) * (0.08 + (5 - inf.userGrade) * 0.02))
-
         // test code 
         console.log(inf.easinessFactor)
 
         if(inf.easinessFactor < 1.3) inf.easinessFactor = 1.3
 
         inf.streak++
+
     } else{
         inf.streak = 0
         inf.intervalDay = 1
     }
     // test code
-    console.log(` output: ${inf.streak} ${inf.intervalDay} ${inf.intervalDay}`)
+    console.log(` output: streak: ${inf.streak} easiness factor: ${inf.easinessFactor} interval: ${inf.intervalDay}`)
 
-    return(inf.streak, inf.intervalDay, inf.intervalDay )
-
+    return(inf.streak, inf.easinessFactor, inf.intervalDay )
 }
 
 
